@@ -1,0 +1,11 @@
+.card {
+  border: 1px solid #000;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.spisok {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}/*# sourceMappingURL=index.css.map */
