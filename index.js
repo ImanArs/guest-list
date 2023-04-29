@@ -17,10 +17,12 @@ const getData = () => {
     }
 getData()
 const newCard = (name,phone, partner) => {
+  console.log();
   return `
     <div class="card">
       <h1>${name} & ${partner}</h1>
-      <p>${phone}</p>
+      <a href="tel:+996${phone.slice(1)}">${phone}</a>
+      <a ></a>
     </div>
   `
 }
