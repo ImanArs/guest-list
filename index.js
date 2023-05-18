@@ -3,7 +3,7 @@ const spisok = document.getElementById('spisok')
 let url = 'https://636a27e5b10125b78fd2189a.mockapi.io/todo'
 
 const getData = () => {
-  fetch("https://636a27e5b10125b78fd2189a.mockapi.io/todo")
+  fetch("https://64662253228bd07b355c9c1c.mockapi.io/wedding")
       .then((resp) => resp.json())
       .then((data) => {
         console.log(data);
