@@ -12,17 +12,17 @@ const getData = () => {
         data.forEach(item => {
           userCard += newCard(item.name, item.phone, item.partner)
         });
-        spisok.innerHTML = userCard
+        spisok.innerHTML += userCard
       })
     }
 getData()
 const newCard = (name,phone, partner) => {
-  console.log();
+  // console.log(phone);
   return `
     <div class="card">
       <h1>${name} & ${partner}</h1>
-      <a href="tel:+996${phone.slice(1)}">${phone}</a>
-      <a ></a>
-    </div>
-  `
-}
+      <a href="tel:+996${phone.toString().slice(1)}">${phone}</a> 
+      </div>
+      `
+    }
+    // <p>${phone}</p>
